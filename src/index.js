@@ -1,3 +1,14 @@
+import { Api } from './modules/API.js';
+import { Card } from './modules/Card.js';
+import { CardList } from './modules/CardList.js';
+import { Popup } from './modules/Popup.js';
+import { UserInfo } from './modules/UserInfo.js';
+import { FormValidator } from './modules/FormValidator.js';
+
+
+
+
+
 const markup = `
     <div class="place-card">
         <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">

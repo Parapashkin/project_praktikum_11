@@ -1,4 +1,4 @@
-class UserInfo {
+export class UserInfo {
     constructor(userElement, infoElement, defaultValues) {
         this.userElement = userElement;
         this.infoElement = infoElement;
