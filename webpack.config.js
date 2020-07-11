@@ -10,14 +10,27 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
     },
+    module: {
+        rules: [
+            {
+                test: /\.(eot|ttf|woff|woff2)$/,
+                loader: 'file-loader?name=./vendor/[name].[ext]'
+            }
 
+
+
+
+        ]
+
+
+    },
 
 
 
     plugins: [
         new WebpackMd5Hash()
-    
-    
+
+
     ]
 };
 
