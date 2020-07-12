@@ -5,7 +5,7 @@ import { Popup } from './modules/Popup.js';
 import { UserInfo } from './modules/UserInfo.js';
 import { FormValidator } from './modules/FormValidator.js';
 
-
+import "./pages/index.css";
 
 
 
@@ -46,7 +46,8 @@ const userInfoJob = document.querySelector('.user-info__job');
 
 
 const config = {
-  url: 'https://praktikum.tk/cohort11',
+  // url: 'https://praktikum.tk/cohort11',
+  url: (NODE_ENV === 'production'? 'https://praktikum.tk/cohort11':'http://praktikum.tk/cohort11'),
   headers: {
     authorization: '3b68f79d-8904-4383-b159-e36d5c19e502',
     'Content-Type': 'application/json'
