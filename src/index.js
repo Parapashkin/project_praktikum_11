@@ -5,7 +5,7 @@ import { Popup } from './modules/Popup.js';
 import { UserInfo } from './modules/UserInfo.js';
 import { FormValidator } from './modules/FormValidator.js';
 
-
+import "./pages/index.css";
 
 
 
